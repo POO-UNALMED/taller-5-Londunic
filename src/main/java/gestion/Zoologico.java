@@ -37,9 +37,10 @@ public class Zoologico {
 	}
 	
 	public int cantidadTotalAnimales(){
-		
 		int aux=0;
-		for (Zona zona : zonas) {
+		Iterator<Zona> i= zonas.iterator();
+		while(i.hasNext()) {
+			Zona zona = (Zona)i.next();
 			aux+=zona.cantidadAnimales();
 		}
 		return aux;
@@ -47,5 +48,4 @@ public class Zoologico {
 	public void agregarZonas(Zona a){
 		zonas.add(a);
 	}
-	
 }
