@@ -33,11 +33,15 @@ public class Zona {
 		return animales;
 	}
 	
-	public void agregarAnimales(Animal a){
+	public static void agregarAnimales(Animal a){
 		animales.add(a);
 	}
 	
 	public static int cantidadAnimales() {
-		return Animal.getTotalAnimales();
+		if (animales.isEmpty()) {
+			return 0;
+		}else {
+			return animales.size();
+		}
 	} 
 }

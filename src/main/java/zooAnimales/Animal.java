@@ -52,6 +52,7 @@ public class Animal {
 	}
 	public void setZona(Zona zona) {
 		this.zona=zona;
+		Zona.agregarAnimales(this);
 	}
 	public Zona getZona() {
 		return zona;
