@@ -57,12 +57,12 @@ public class Animal {
 		return zona;
 	}
 	
-	public static void totalPorTipo() {
-		System.out.print("Mamiferos: "+ Mamifero.cantidadMamiferos());
-		System.out.print("Aves: "+Ave.cantidadAves());
-		System.out.print("Reptiles: "+Reptil.cantidadReptiles());
-		System.out.print("Peces: "+Pez.cantidadPeces());
-		System.out.print("Anfibios: "+Anfibio.cantidadAnfibios());
+	public static String totalPorTipo() {
+		return "Mamiferos: " + Mamifero.cantidadMamiferos() + "\n" +
+		"Aves: " + Ave.cantidadAves() + "\n" +
+		"Reptiles: " + Reptil.cantidadReptiles() + "\n" +
+		"Peces: " + Pez.cantidadPeces() + "\n" +
+		"Anfibios: " + Anfibio.cantidadAnfibios();
 	}
 	
 	public String toString() {
