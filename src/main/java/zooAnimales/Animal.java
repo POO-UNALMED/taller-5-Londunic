@@ -1,7 +1,4 @@
 package zooAnimales;
-import java.util.ArrayList;
-import java.util.List;
-
 import gestion.*;
 
 public class Animal {
@@ -18,7 +15,9 @@ public class Animal {
 		this.habitat=habitat;
 		this.genero=genero;
 	}
-	public Animal(){}
+	public Animal(){
+		totalAnimales++;
+	}
 	
 	public static int getTotalAnimales() {
 		return totalAnimales;
