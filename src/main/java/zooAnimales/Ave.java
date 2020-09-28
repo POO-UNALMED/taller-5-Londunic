@@ -46,7 +46,7 @@ public class Ave extends Animal{
 		return nuevo;
 	}
 	public static int cantidadAves() {
-		return listado.size();
+		return halcones+aguilas;
 	}
 
 }

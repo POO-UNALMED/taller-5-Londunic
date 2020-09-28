@@ -54,7 +54,7 @@ public class Pez extends Animal{
 		return nuevo;
 	}
 	public static int cantidadPeces() {
-		return listado.size();
+		return salmones+bacalaos;
 	}
 
 }
