@@ -54,7 +54,11 @@ public class Reptil extends Animal {
 		return nuevo;
 	}
 	public static int cantidadReptiles() {
-		return iguanas+serpientes;
+		if (listado.isEmpty()) {
+			return 0;
+		}else {
+			return listado.size();
+		}
 	}
 
 }

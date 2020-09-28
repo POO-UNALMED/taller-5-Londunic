@@ -54,7 +54,11 @@ public class Anfibio extends Animal {
 		return nuevo;
 	}
 	public static int cantidadAnfibios() {
-		return salamandras+ranas;
+		if (listado.isEmpty()) {
+			return 0;
+		}else {
+			return listado.size();
+		}
 	}
 
 }

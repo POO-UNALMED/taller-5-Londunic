@@ -53,7 +53,11 @@ public class Mamifero extends Animal {
 		return nuevo;
 	}
 	public static int cantidadMamiferos() {
-		return caballos+leones;
+		if (listado.isEmpty()) {
+			return 0;
+		}else {
+			return listado.size();
+		}
 	}
 
 }
