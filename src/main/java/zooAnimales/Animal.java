@@ -8,26 +8,13 @@ public class Animal {
 	private String habitat;
 	private String genero;
 	private Zona zona;
-	
-	public static void main(String[] args) {
-        new Anfibio();
-        new Anfibio();
-        new Mamifero();
-        new Mamifero();
-        new Mamifero();
-        new Reptil();
-        new Pez();
-        new Ave();
-        new Ave();
-        System.out.println(Animal.totalPorTipo());
-        System.out.println("Mamiferos: 4\n" + "Aves: 4\n" + "Reptiles: 2\n" + "Peces: 2\n" + "Anfibios: 3");
-    }
-	
+		
 	public Animal(String nombre,int edad,String habitat,String genero){
 		this.nombre=nombre;
 		this.edad=edad;
 		this.habitat=habitat;
 		this.genero=genero;
+		totalAnimales++;
 	}
 	public Animal(){
 		totalAnimales++;
