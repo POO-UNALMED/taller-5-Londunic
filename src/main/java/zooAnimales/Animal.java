@@ -2,7 +2,7 @@ package zooAnimales;
 import gestion.*;
 
 public class Animal {
-	private static int totalAnimales=Mamifero.cantidadMamiferos()+Ave.cantidadAves()+Reptil.cantidadReptiles()+Pez.cantidadPeces()+Anfibio.cantidadAnfibios();
+	private static int totalAnimales;
 	private String nombre;
 	private int edad;
 	private String habitat;
