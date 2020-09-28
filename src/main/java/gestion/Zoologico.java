@@ -40,7 +40,8 @@ public class Zoologico {
 		int aux=0;
 		Iterator<Zona> i= zonas.iterator();
 		while(i.hasNext()) {
-			aux+=i.next().cantidadAnimales();
+			i.next();
+			aux+=Zona.cantidadAnimales();
 		}
 		return aux;
 	}

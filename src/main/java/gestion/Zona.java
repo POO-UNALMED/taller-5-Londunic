@@ -38,6 +38,10 @@ public class Zona {
 	}
 	
 	public static int cantidadAnimales() {
-		return animales.size();
+		if (animales.isEmpty()) {
+			return 0;
+		}else {
+			return animales.size();
+		}
 	} 
 }
