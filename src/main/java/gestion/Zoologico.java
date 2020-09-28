@@ -2,7 +2,6 @@ package gestion;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Iterator;
 
 
 public class Zoologico {
@@ -38,9 +37,7 @@ public class Zoologico {
 	
 	public int cantidadTotalAnimales(){
 		int aux=0;
-		Iterator<Zona> i= zonas.iterator();
-		while(i.hasNext()) {
-			Zona zona = (Zona)i.next();
+		for (Zona zona : zonas) {
 			aux+=zona.cantidadAnimales();
 		}
 		return aux;

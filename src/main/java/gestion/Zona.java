@@ -5,7 +5,7 @@ import java.util.*;
 public class Zona {
 	private String nombre;
 	private Zoologico zoo;
-	private static List<Animal> animales= new ArrayList<Animal>();
+	private List<Animal> animales= new ArrayList<Animal>();
 	
 	public Zona(String nombre,Zoologico zoo){
 		this.nombre = nombre;
@@ -26,22 +26,18 @@ public class Zona {
 	public Zoologico getZoo() {
 		return zoo;
 	}
-	public static void setAnimales(List<Animal> animale) {
+	public  void setAnimales(List<Animal> animale) {
 		animales=animale;
 	}
-	public static List<Animal> getAnimales() {
+	public List<Animal> getAnimales() {
 		return animales;
 	}
 	
-	public static void agregarAnimales(Animal a){
+	public void agregarAnimales(Animal a){
 		animales.add(a);
 	}
 	
-	public static int cantidadAnimales() {
-		if (animales.isEmpty()) {
-			return 0;
-		}else {
-			return animales.size();
-		}
+	public int cantidadAnimales() {
+		return animales.size();
 	} 
 }
